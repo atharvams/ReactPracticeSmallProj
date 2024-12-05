@@ -4,7 +4,7 @@ import { useState } from "react";
 import GamePage from "./assets/components/GamePage";
 
 function App() {
-  const [isGameStarted, setIsGameStarted] = useState(true);
+  const [isGameStarted, setIsGameStarted] = useState(false);
 
   const togglePlayGame = () => {
     return setIsGameStarted((prev) => !prev);
@@ -12,6 +12,7 @@ function App() {
 
   return (
     <>
+      
       {isGameStarted ? <GamePage /> : <LandingPage toggle={togglePlayGame} />}
     </>
   );
