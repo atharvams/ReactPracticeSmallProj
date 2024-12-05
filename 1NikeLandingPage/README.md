@@ -1,8 +1,64 @@
-# React + Vite
+# Nike Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Nike-themed landing page built as a React practice project. The page contains basic navigation and a hero section featuring a catchy phrase and a shoe image. Basic global CSS is used for styling the page.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Navigation showcase**: Includes basic navigation links for demonstration.
+- **Hero Section**: Highlights a stylish shoe with a captivating phrase.
+
+## Purpose
+
+This project is designed for practicing React fundamentals, including component structure, props, and basic styling using global CSS.
+
+## Preview
+
+![Nike Landing Page Preview](./image.png)
+
+## Getting Started
+
+Follow these instructions to set up and run the project on your local machine.
+
+### Prerequisites
+
+- Node.js installed on your system
+- A code editor (e.g., VS Code)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/nike-landing-page.git
+
+   ```
+
+2. Navigate to project folder:
+
+   ```bash
+   cd nike-landing-page
+
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+# Running the applicaiton:
+
+1. Run the local server: (vite build tool)
+
+   ```bash
+   npm run dev
+
+   ```
+
+2. Go to browser:
+   ```bash
+   http://localhost:5173
+   ```
+
+## Contributing
+
+Feel free to fork this repository, submit issues, or make pull requests to improve the project.
