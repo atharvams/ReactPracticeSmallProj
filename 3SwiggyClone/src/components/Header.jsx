@@ -47,12 +47,13 @@ function Header() {
   return (
     <>
       <div
-        className="black-overlay w-full h-full fixed duration-500"
+        className="black-overlay w-full h-full fixed duration-500 z-[9999]"
         onClick={hideSideMenu}
         style={{
           opacity: toggle ? 1 : 0,
           visibility: toggle ? "visible" : "hidden",
         }}
+        
       >
         <div
           className="w-[400px] h-full bg-white duration-700 absolute"
@@ -62,7 +63,7 @@ function Header() {
           }}
         ></div>
       </div>
-      <header className="h-[80px] p-3 shadow-md ">
+      <header className="h-[80px] p-3 shadow-md sticky top-0 z-[999] bg-white">
         <div className="flex items-center gap-5 max-w-[1200px] mx-auto">
           <div className="">{swiggy_logo}</div>
           <div className="ml-10">
@@ -77,7 +78,7 @@ function Header() {
               className="inline ml-6 cursor-pointer"
             />
           </div>
-          <nav className="flex items-center list-none gap-12 ml-auto text-[16px]">
+          <nav className="hidden md:flex items-center list-none gap-12 ml-auto text-[16px]">
             {links.map((item, index) => (
               <li key={index} className="flex items-center gap-2 hover:text-[#ff5200]">
                 {item.icon}

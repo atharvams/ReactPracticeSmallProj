@@ -30,7 +30,7 @@ function Category() {
   }, []);
 
   return (
-    <div className="max-w-[1200px] h-full mx-auto">
+    <div className="px-2 md:max-w-[1200px] h-full mx-auto">
       <div className="flex justify-between my-5 items-center mt-10">
         <div className="text-2xl font-bold">What's on your mind?</div>
         <div className="flex ">
@@ -48,7 +48,7 @@ function Category() {
           </div>
         </div>
       </div>
-      <div className="flex overflow-hidden mt-10">
+      <div className="flex overflow-hidden mt-10 z-[-99]">
         {categories.map((item, index) => {
           return (
             <div
