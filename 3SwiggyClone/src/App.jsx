@@ -1,15 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import Header from './components/Header'
 import "./App.css";
+import Category from './components/Category';
+import TopHotels from './components/TopHotels';
 
 function App() {
-  const [count, setCount] = useState(0);
+  
 
   return (
     <>
-      <h1>Hello react app is running!</h1>
-      <h2>Test page</h2>
+      <Header/>
+      <Category/>
+      <TopHotels/>
     </>
   );
 }
