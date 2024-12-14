@@ -20,8 +20,9 @@ function Category() {
   }
 
   async function fetchCategory() {
-    const data = await fetch("http://localhost:5000/categories");
+    const data = await fetch(import.meta.env.API_URL+"/categories");
     const jsonData = await data.json();
+    console.log(jsonData);
     setCategories(jsonData);
   }
 
@@ -30,7 +31,7 @@ function Category() {
   }, []);
 
   return (
-    <div className="px-2 md:max-w-[1200px] h-full mx-auto">
+    <div className="px-2`` md:max-w-[1200px] h-full mx-auto">
       <div className="flex justify-between my-5 items-center mt-10">
         <div className="text-2xl font-bold">What's on your mind?</div>
         <div className="flex ">
@@ -53,23 +54,21 @@ function Category() {
           return (
             <div
               style={{
-                transform: `translateX(-${number*100}%)`,
+                transform: `translateX(-${number * 100}%)`,
               }}
               className="w-[150px] shrink-0 duration-500"
             >
               <img
-                src={"http://localhost:5000/images/" + item.image}
+                src={"images/" + item.image}
                 alt={item.path}
               />
             </div>
           );
         })}
       </div>
-      <hr className="mt-10 border-[1px]"/>
+      <hr className="mt-10 border-[1px]" />
     </div>
   );
 }
 
 export default Category;
-
-
