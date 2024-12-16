@@ -5,7 +5,7 @@ import { posts } from "../data/data";
 
 function Posts({ post }) {
   return (
-    <Grid item xs={12} md={6}>
+    <Grid item size={{ xs: 12, md: 6 }}>
       <CardActionArea component="a" href="#">
         <Card>
           <div sx={{ flex: 1 }}>

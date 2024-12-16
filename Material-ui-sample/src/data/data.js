@@ -1,7 +1,6 @@
-
-// import GitHubIcon from "@material-ui/icons/GitHub";
-// import FacebookIcon from "@material-ui/icons/Facebook";
-// import TwitterIcon from "@material-ui/icons/Twitter";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
 
 export const sections = [
   { title: "Technology", url: "#" },
@@ -150,9 +149,9 @@ export const sidebar = {
     { title: "May 1999", url: "#" },
     { title: "April 1999", url: "#" },
   ],
-//   social: [
-//     { name: "GitHub", icon: GitHubIcon },
-//     { name: "Twitter", icon: TwitterIcon },
-//     { name: "Facebook", icon: FacebookIcon },
-//   ],
+  social: [
+    { name: "GitHub", icon: GitHubIcon },
+    { name: "Twitter", icon: TwitterIcon },
+    { name: "Facebook", icon: FacebookIcon },
+  ],
 };
